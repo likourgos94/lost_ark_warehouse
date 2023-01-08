@@ -1,0 +1,322 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<style>
+  h5 {
+    margin-top: 0;
+    margin-bottom: 5;
+  }
+
+  .input {
+    margin-bottom: 18px;
+  }
+  .left { position: relative;}
+  .bottom{
+    position: absolute;
+  left: 0;
+  top: 320px;;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<form action="/"  role = "form">
+<h1 align="center">Hello {{username}} </h1>
+<h1 align="center">Items</h1>
+<div class="left" style="float: left; width: 50%;">
+  <div class="bottom" style="float: bottom; width:50%;">
+    <div class="tenor-gif-embed" data-postid="25178858" data-share-method="host" data-aspect-ratio="1.79775" data-width="100%"><a href="https://tenor.com/view/mokoko-lost-ark-gif-25178858">Mokoko Lost GIF</a>from <a href="https://tenor.com/search/mokoko-gifs">Mokoko GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div class="tenor-gif-embed" data-postid="25385916" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/mokoko-gif-25385916">Mokoko GIF</a>from <a href="https://tenor.com/search/mokoko-gifs">Mokoko GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
+  </div>
+    
+  
+  <h5 align="center">Honing Materials</h5>
+  <div style="float: left; width: 25%;">
+    <h5 align="center"> <img src="{{ url_for('static', filename='marvelous_honor_leapstone.png') }}" width="40"
+        height="40"> = {{marvelous_honor_leapstone}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='great_honor_leapstone.png') }}" width="40" height="40">
+      = {{great_honor_leapstone}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='solar_protection.png') }}" width="40" height="40"> =
+      {{solar_protection}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='solar_blessing.png') }}" width="40" height="40"> =
+      {{solar_blessing}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='solar_grace.png') }}" width="40" height="40"> =
+      {{solar_grace}}</h5>
+
+   
+  </div>
+  <div style="float: left; width: 25%;">
+    <label for="marvelous_honor_leapstone"></label>
+
+    <input type="number" class="input" id="marvelous_honor_leapstone" name="marvelous_honor_leapstone" min="0"
+      style="width:60px;"><br>
+
+    <label for="great_honor_leapstone"></label>
+
+    <input type="number" class="input" id="great_honor_leapstone" name="great_honor_leapstone" min="0"
+      style="width:60px;"><br>
+
+    <label for="solar_protection"></label>
+
+    <input type="number" class="input" id="solar_protection" name="solar_protection" min="0" style="width:60px;"><br>
+
+    <label for="solar_blessing"></label>
+
+    <input type="number" class="input" id="solar_blessing" name="solar_blessing" min="0" style="width:60px;"><br>
+    <label for="solar_grace"></label>
+
+    <input type="number" class="input" id="solar_grace" name="solar_grace" min="0" style="width:60px;"><br>
+
+
+    <button type="submit" class="btn btn-primary" formmethod="POST">Submit</button>
+
+    
+
+  </div>
+
+  <div style="float: left; width: 25%;">
+    <h5 align="center"> <img src="{{ url_for('static', filename='honor_shard_pouch_l.png') }}" width="40" height="40"> =
+      {{honor_shard_pouch_l}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='honor_shard_pouch_m.png') }}" width="40" height="40"> =
+      {{honor_shard_pouch_m}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='honor_shard_pouch_s.png') }}" width="40" height="40"> =
+      {{honor_shard_pouch_s}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='obliteration_stone.png') }}" width="40" height="40"> =
+      {{obliteration_stone}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='protection_stone.png') }}" width="40" height="40"> =
+      {{protection_stone}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='crystallized_destruction_stone.png') }}" width="40"
+        height="40"> = {{crystallized_destruction_stone}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='crystallized_protection_stone.png') }}" width="40"
+        height="40"> = {{crystallized_protection_stone}}</h5>
+  </div>
+  <div style="float: left; width: 25%;">
+    <label for="honor_shard_pouch_l"></label>
+
+    <input type="number" class="input" id="honor_shard_pouch_l" name="honor_shard_pouch_l" min="0"
+      style="width:60px;"><br>
+
+    <label for="honor_shard_pouch_m"></label>
+
+    <input type="number" class="input" id="honor_shard_pouch_m" name="honor_shard_pouch_m" min="0"
+      style="width:60px;"><br>
+
+    <label for="honor_shard_pouch_s"></label>
+
+    <input type="number" class="input" id="honor_shard_pouch_s" name="honor_shard_pouch_s" min="0"
+      style="width:60px;"><br>
+
+    <label for="obliteration_stone"></label>
+
+    <input type="number" class="input" id="obliteration_stone" name="obliteration_stone" min="0"
+      style="width:60px;"><br>
+
+    <label for="protection_stone"></label>
+
+    <input type="number" class="input" id="protection_stone" name="protection_stone" min="0" style="width:60px;"><br>
+
+    <label for="crystallized_destruction_stone"></label>
+
+    <input type="number" class="input" id="crystallized_destruction_stone" name="crystallized_destruction_stone" min="0"
+      style="width:60px;"><br>
+
+    <label for="marvelous_honor_leapstone"></label>
+
+    <input type="number" class="input" id="crystallized_protection_stone" name="crystallized_protection_stone" min="0"
+      style="width:60px;"><br>
+
+
+
+
+  </div>
+
+</div>
+<div style="float: left; width: 50%;">
+  <h5 align="center">Trade Goods</h5>
+  <div style="float: left; width: 25%;">
+    <h5 align="center"> <img src="{{ url_for('static', filename='wild_flower.png') }}" width="40" height="40"> =
+      {{wild_flower}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='shy_wild_flower.png') }}" width="40" height="40"> =
+      {{shy_wild_flower}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='bright_wild_flower.png') }}" width="40" height="40"> =
+      {{bright_wild_flower}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='crude_mushroom.png') }}" width="40" height="40"> =
+      {{crude_mushroom}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='fresh_mushroom.png') }}" width="40" height="40"> =
+      {{fresh_mushroom}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='exquisite_mushroom.png') }}" width="40" height="40"> =
+      {{exquisite_mushroom}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='timber.png') }}" width="40" height="40"> = {{timber}}
+    </h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='tender_timber.png') }}" width="40" height="40"> =
+      {{tender_timber}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='sturdy_timber.png') }}" width="40" height="40"> =
+      {{sturdy_timber}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='iron_ore.png') }}" width="40" height="40"> =
+      {{iron_ore}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='heavy_iron_ore.png') }}" width="40" height="40"> =
+      {{heavy_iron_ore}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='strong_iron_ore.png') }}" width="40" height="40"> =
+      {{strong_iron_ore}}</h5>
+  </div>
+  <div style="float: left; width: 25%;">
+    <label for="wild_flower"></label>
+
+    <input type="number" class="input" id="wild_flower" name="wild_flower" min="0"
+      style="width:60px;"><br>
+
+    <label for="shy_wild_flower"></label>
+
+    <input type="number" class="input" id="shy_wild_flower" name="shy_wild_flower" min="0"
+      style="width:60px;"><br>
+
+    <label for="bright_wild_flower"></label>
+
+    <input type="number" class="input" id="bright_wild_flower" name="bright_wild_flower" min="0"
+      style="width:60px;"><br>
+
+    <label for="crude_mushroom"></label>
+
+    <input type="number" class="input" id="crude_mushroom" name="crude_mushroom" min="0"
+      style="width:60px;"><br>
+
+    <label for="fresh_mushroom"></label>
+
+    <input type="number" class="input" id="fresh_mushroom" name="fresh_mushroom" min="0"
+      style="width:60px;"><br>
+
+    <label for="exquisite_mushroom"></label>
+
+    <input type="number" class="input" id="exquisite_mushroom" name="exquisite_mushroom" min="0"
+      style="width:60px;"><br>
+
+    <label for="timber"></label>
+
+    <input type="number" class="input" id="timber" name="timber" min="0"
+      style="width:60px;"><br>
+
+    <label for="tender_timber"></label>
+
+    <input type="number" class="input" id="tender_timber" name="tender_timber" min="0"
+      style="width:60px;"><br>
+
+    <label for="sturdy_timber"></label>
+
+    <input type="number" class="input" id="sturdy_timber" name="sturdy_timber" min="0"
+      style="width:60px;"><br>
+
+    <label for="iron_ore"></label>
+
+    <input type="number" class="input" id="iron_ore" name="iron_ore" min="0"
+      style="width:60px;"><br>
+
+    <label for="heavy_iron_ore"></label>
+
+    <input type="number" class="input" id="heavy_iron_ore" name="heavy_iron_ore" min="0"
+      style="width:60px;"><br>
+
+    <label for="strong_iron_ore"></label>
+
+    <input type="number" class="input" id="strong_iron_ore" name="strong_iron_ore" min="0"
+      style="width:60px;"><br>
+
+  </div>
+  <div style="float: left; width: 25%;">
+    <h5 align="center"> <img src="{{ url_for('static', filename='fish.png') }}" width="40" height="40"> = {{fish}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='redflesh_fish.png') }}" width="40" height="40"> =
+      {{redflesh_fish}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='oreha_solar_carp.png') }}" width="40" height="40"> =
+      {{oreha_solar_carp}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='natural_pearl.png') }}" width="40" height="40"> =
+      {{natural_pearl}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='ancient_relic.png') }}" width="40" height="40"> =
+      {{ancient_relic}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='rare_relic.png') }}" width="40" height="40"> =
+      {{rare_relic}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='oreha_relic.png') }}" width="40" height="40"> =
+      {{oreha_relic}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='thick_raw_meat.png') }}" width="40" height="40"> =
+      {{thick_raw_meat}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='treated_meat.png') }}" width="40" height="40"> =
+      {{treated_meat}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='tough_leather.png') }}" width="40" height="40"> =
+      {{tough_leather}}</h5>
+    <h5 align="center"> <img src="{{ url_for('static', filename='oreha_thick_meat.png') }}" width="40" height="40"> =
+      {{oreha_thick_meat}}</h5>
+
+  </div>
+  <div style="float: left; width: 25%;">
+    <label for="fish"></label>
+
+    <input type="number" class="input" id="fish" name="fish" min="0"
+      style="width:60px;"><br>
+
+    <label for="redflesh_fish"></label>
+
+    <input type="number" class="input" id="redflesh_fish" name="redflesh_fish" min="0"
+      style="width:60px;"><br>
+
+    <label for="oreha_solar_carp"></label>
+
+    <input type="number" class="input" id="oreha_solar_carp" name="oreha_solar_carp" min="0"
+      style="width:60px;"><br>
+
+    <label for="natural_pearl"></label>
+
+    <input type="number" class="input" id="natural_pearl" name="natural_pearl" min="0"
+      style="width:60px;"><br>
+
+    <label for="ancient_relic"></label>
+
+    <input type="number" class="input" id="ancient_relic" name="ancient_relic" min="0"
+      style="width:60px;"><br>
+
+    <label for="rare_relic"></label>
+
+    <input type="number" class="input" id="rare_relic" name="rare_relic" min="0"
+      style="width:60px;"><br>
+
+    <label for="oreha_relic"></label>
+
+    <input type="number" class="input" id="oreha_relic" name="oreha_relic" min="0"
+      style="width:60px;"><br>
+
+    <label for="thick_raw_meat"></label>
+
+    <input type="number" class="input" id="thick_raw_meat" name="thick_raw_meat" min="0"
+      style="width:60px;"><br>
+
+    <label for="treated_meat"></label>
+
+    <input type="number" class="input" id="treated_meat" name="treated_meat" min="0"
+      style="width:60px;"><br>
+
+    <label for="tough_leather"></label>
+
+    <input type="number" class="input" id="tough_leather" name="tough_leather" min="0"
+      style="width:60px;"><br>
+
+    <label for="oreha_thick_meat"></label>
+
+    <input type="number" class="input" id="oreha_thick_meat" name="oreha_thick_meat" min="0"
+      style="width:60px;"><br>
+
+  </div>
+
+</div>
+</form>
+
+
+
+
+{% endblock %}
